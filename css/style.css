@@ -150,28 +150,27 @@ body {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .image-1 img{
     width: 230px;
     height: 210px;    
     margin-right: 15px;
-    border-radius: 5%;
-    flex: 1 1 10px;
+    border-radius: 5%;    
 }
 
 .image-2 img{
     width: 230px;
     height: 200px;    
     margin-right: 15px;
-    border-radius: 5%;
-    flex: 1 1 10px;
+    border-radius: 5%;    
 }
 
 .image-3 img{
     width: 230px;
     height: 400px;    
     margin-right: 15px;
-    border-radius: 5%;
-    flex: 1 1 10px;
+    border-radius: 5%;    
 }
+
