@@ -120,8 +120,13 @@ body {
     color: #aaa;
 }
 
+.inputWithIcon input:focus {
+    border: 3px solid;    
+    border-color: rgb(83, 83, 238);
+}
+
 .inputWithIcon input[type=search]:focus + i{            
-    display: none;
+    display: none;    
 }
 
 .img-notification {
@@ -172,6 +177,9 @@ body {
 }
 
 .image {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     margin-bottom: 20px;
 }
 
@@ -209,18 +217,14 @@ body {
 
     .btn-today {
         font-size: 16px;
-
-
-
-
-
-
-
-
-
     }
 
     .option-create {
         font-size: 16px;
     }    
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
