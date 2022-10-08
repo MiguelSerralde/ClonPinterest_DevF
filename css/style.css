@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
 body {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .principal {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .header-bar {
@@ -21,6 +21,7 @@ body {
     padding-bottom: 10px;
     position: fixed;
     background-color: #fff;
+    z-index: 3; 
 }
 
 .img-container {
@@ -161,7 +162,7 @@ body {
     background-color: #fff;
 }
 
-.gallery {
+.gallery {    
     margin-top: 17px;
     columns: 6 210px; 
     column-gap: 10px;
@@ -183,8 +184,12 @@ body {
     margin-bottom: 20px;
 }
 
-
 .image:hover > .select-profile{    
+    display: block;  
+    position: absolute;  
+}
+
+.image:hover > .btn-Save{    
     display: block;  
     position: absolute;  
 }
@@ -194,7 +199,9 @@ body {
 }
 
 .image-art:hover {
-    cursor: zoom-in;    
+    cursor: zoom-in;   
+    filter: brightness(80%);     
+    z-index: 1;
 }
 
 .perfil {    
@@ -202,7 +209,7 @@ body {
     top: 10px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: aqua;
+    color: aqua;        
 }
 
 .artist {
@@ -216,8 +223,9 @@ body {
     display: none;    
     width: 80px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-left: 10px;
+    margin-right: 1%;
     background-color: transparent;
     border: none;
     color: white;    
@@ -225,6 +233,32 @@ body {
     font-weight: 900;        
     font-kerning: none;    
     text-shadow: 2px 2px black;
+    overflow: visible; 
+    z-index: 2; 
+}
+
+.select-profile:hover {
+    cursor: pointer;    
+}
+
+.btn-Save {
+    display: none;
+    position: absolute;
+    margin-left: 10.5%;
+    margin-top: 10px;
+    width: 80px;
+    height: 45px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(158, 6, 6);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;    
+    z-index: 2;
+}
+
+.btn-Save:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 1500px) {
@@ -252,4 +286,5 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+    z-index: 3;
+}
