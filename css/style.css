@@ -191,7 +191,8 @@ body {
 
 .image:hover > .btn-Save{    
     display: block;  
-    position: absolute;  
+    position: absolute;
+     
 }
 
 .image:hover {
@@ -241,9 +242,9 @@ body {
     cursor: pointer;    
 }
 
-.btn-Save {
-    display: none;
-    position: absolute;
+.btn-Save {    
+    display: none;    
+    position: absolute, relative;    
     margin-left: 10.5%;
     margin-top: 10px;
     width: 80px;
@@ -280,8 +281,10 @@ body {
 
     .option-create {
         font-size: 16px;
-    }    
+    }      
+ 
 }
+
 
 .attribution {
     font-size: 11px;
